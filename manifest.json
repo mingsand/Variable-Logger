@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Variable Logger",
+    "version": "1.0",
+    "description": "Ctrl+B를 누르면 페이지의 모든 변수를 JSON 형식으로 콘솔에 출력합니다.",
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "log-variables": {
+            "suggested_key": {
+                "default": "Ctrl+B"
+            },
+            "description": "모든 변수를 콘솔에 출력"
+        }
+    }
+}
